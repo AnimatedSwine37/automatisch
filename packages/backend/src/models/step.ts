@@ -43,6 +43,9 @@ class Step extends Base {
       },
       position: { type: 'integer' },
       parameters: { type: 'object' },
+      deletedAt: { type: 'string' },
+      createdAt: { type: 'string' },
+      updatedAt: { type: 'string' },
     },
   };
 

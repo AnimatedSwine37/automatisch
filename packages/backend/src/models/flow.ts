@@ -18,7 +18,7 @@ class Flow extends Base {
   active: boolean;
   status: 'paused' | 'published' | 'draft';
   steps: Step[];
-  published_at: string;
+  publishedAt: string;
   remoteWebhookId: string;
   executions?: Execution[];
   lastExecution?: Execution;
@@ -36,6 +36,10 @@ class Flow extends Base {
       userId: { type: 'string', format: 'uuid' },
       remoteWebhookId: { type: 'string' },
       active: { type: 'boolean' },
+      publishedAt: { type: 'string' },
+      deletedAt: { type: 'string' },
+      createdAt: { type: 'string' },
+      updatedAt: { type: 'string' },
     },
   };
 
